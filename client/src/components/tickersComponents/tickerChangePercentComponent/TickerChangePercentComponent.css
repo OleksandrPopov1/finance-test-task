@@ -1,0 +1,19 @@
+.tickerComponentChange {
+    text-align: center;
+
+    min-width: 8vw;
+
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.tickerComponentChangePercentGreen {
+    color: #025402;
+    background-color: #76c476;
+}
+
+.tickerComponentChangePercentRed {
+    color: #930606;
+    background-color: #f58b8b;
+}

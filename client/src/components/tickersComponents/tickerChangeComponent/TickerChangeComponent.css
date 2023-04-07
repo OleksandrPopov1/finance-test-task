@@ -1,0 +1,17 @@
+.tickerComponentChange {
+    text-align: center;
+
+    min-width: 8vw;
+
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.tickerComponentChangeGreen {
+    color: #025402;
+}
+
+.tickerComponentChangeRed {
+    color: #930606;
+}

@@ -1,0 +1,48 @@
+.dialogTitle > div {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.dialogTitle > div > p {
+    margin: 0;
+}
+
+.lastUpdate > h2 {
+    margin: 0 20px 0 0;
+    font-size: 45px;
+}
+
+.lastUpdate {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.lastUpdate > h3 {
+    font-size: 20px;
+}
+
+.anotherUpdates {
+    display: flex;
+    color: #525252;
+    margin-left: 5px;
+}
+
+.anotherUpdates > p {
+    margin: 0 20px 0 0;
+}
+
+.tradeTime {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: #525252;
+    margin-bottom: 10px;
+}
+
+.tradeTime > p {
+    margin: 0 5px 0;
+}

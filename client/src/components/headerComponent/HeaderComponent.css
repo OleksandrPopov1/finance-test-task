@@ -1,0 +1,9 @@
+.headerComponent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 15vh;
+    background-color: #0d2860;
+    color: snow;
+}

@@ -1,0 +1,47 @@
+.tickerContainer {
+    display: flex;
+    justify-content: right;
+    min-width: 80vw;
+}
+
+.tickerComponent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+}
+
+.tickerComponent:hover {
+    cursor: pointer;
+    background-color: #f8f6f6;
+}
+
+.tickerComponent:active {
+    background-color: #bdc8e5;
+}
+
+.tickerComponent > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tickerComponent span {
+    margin-right: 20px;
+    font-weight: 600;
+    min-width: 5vw;
+}
+
+.tickerComponent h3 {
+    margin: 10px;
+}
+
+.tickerComponentFulName {
+    text-align: left;
+    min-width: 10vw;
+}
+
+
+
+
+
