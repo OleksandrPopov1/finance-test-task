@@ -5,7 +5,7 @@ import './FooterComponent.css';
 const FooterComponent: FC = () => {
     return (
         <div className={'footerComponent'}>
-            <p>&copy; Ticker, 2023. All rights reserved.</p>
+            <p>&copy; <span>Ticker, 2023. All rights reserved.</span></p>
         </div>
     );
 };

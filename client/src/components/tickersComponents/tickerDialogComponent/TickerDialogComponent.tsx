@@ -16,6 +16,7 @@ interface IProps {
 }
 
 const TickerDialogComponent: FC<IProps> = ({ticker, open, handleCloseDialog}) => {
+
     const tradeTime: string = new Date(ticker.last_trade_time).toLocaleDateString("en-US", {
         hour: '2-digit',
         minute: '2-digit',
@@ -26,7 +27,9 @@ const TickerDialogComponent: FC<IProps> = ({ticker, open, handleCloseDialog}) =>
     });
 
     return (
-        <Dialog open={open} maxWidth={false}>
+        <Dialog data-testid='tickerDialog'
+                id={'Dialog'}
+            open={open} maxWidth={false}>
             <DialogTitle className={'dialogTitle'}>
                 <div>
                     <p>{ticker.tickerFullName}</p>

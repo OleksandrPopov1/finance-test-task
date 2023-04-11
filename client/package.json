@@ -1,10 +1,9 @@
 {
-  "name": "finance-test-task",
+  "name": "empty",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@devexpress/dx-react-chart": "^4.0.3",
-    "@devexpress/dx-react-chart-bootstrap4": "^4.0.3",
     "@devexpress/dx-react-chart-material-ui": "^4.0.3",
     "@devexpress/dx-react-core": "^4.0.3",
     "@emotion/react": "^11.10.6",
@@ -20,21 +19,21 @@
     "@types/node": "^16.18.23",
     "@types/react": "^18.0.32",
     "@types/react-dom": "^18.0.11",
-    "axios": "^1.3.4",
+    "apexcharts": "^3.37.3",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.4.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-scripts": "5.0.1",
     "redux": "^4.2.1",
-    "socket.io-client": "^4.6.0",
-    "styled-components": "^5.3.9",
+    "socket.io-client": "^4.6.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --transformIgnorePatterns \\\"node_modules/(?!@devexpress/dx-react-chart-material-ui)/\\\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

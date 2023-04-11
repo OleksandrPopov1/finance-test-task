@@ -9,7 +9,8 @@ interface IProps {
 
 const TickerChangePercentComponent: FC<IProps> = ({changePercent, good}) => {
     return (
-        <h3 className={`tickerComponentChange ${good ? 'tickerComponentChangePercentGreen' : 'tickerComponentChangePercentRed'}`}>
+        <h3 data-testid='tickerChangePercentComponent'
+            className={`tickerComponentChange ${good ? 'tickerComponentChangePercentGreen' : 'tickerComponentChangePercentRed'}`}>
             {good ? '🠕' : '🠗'}
             {changePercent}%
         </h3>

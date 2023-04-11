@@ -31,11 +31,14 @@ const TickerComponent: FC<IProps> = ({ticker}) => {
     }
 
     return (
-        <div className={'tickerContainer'}>
-            {showTicker && <div>
+        <div data-testid='ticker'
+             className={'tickerContainer'}>
+            {showTicker && <div data-testid='tickerData'>
                 <Divider style={{width: '100%'}}/>
 
-                <div className={'tickerComponent'} onClick={handleOpenDialog}>
+                <div data-testid='tickerInformation'
+                    className={'tickerComponent'}
+                    onClick={handleOpenDialog}>
                     <div>
                         <div>
                             <Badge badgeContent={ticker.tickerName} color="primary"/>
@@ -51,11 +54,16 @@ const TickerComponent: FC<IProps> = ({ticker}) => {
                 </div>
             </div>}
 
-            <Button onClick={switchShowTicker}>
+            <Button data-testid='buttonTicker' onClick={switchShowTicker}>
                 {showTicker ? <RemoveCircleOutlineIcon/> : <AddCircleOutlineIcon/>}
             </Button>
 
-            <TickerDialogComponent open={openDialog} ticker={ticker} handleCloseDialog={handleCloseDialog}/>
+            <TickerDialogComponent
+                data-testid='tickerDialog'
+                open={openDialog}
+                ticker={ticker}
+                handleCloseDialog={handleCloseDialog}
+            />
         </div>
     );
 };

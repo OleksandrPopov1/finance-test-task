@@ -1,15 +1,8 @@
 import {FC} from "react";
 import Paper from '@mui/material/Paper';
-import {
-    ArgumentAxis,
-    ValueAxis,
-    Chart,
-    LineSeries,
-    Tooltip
-} from '@devexpress/dx-react-chart-material-ui';
+import {ArgumentAxis, ValueAxis, Chart, LineSeries, Tooltip} from '@devexpress/dx-react-chart-material-ui';
 import {EventTracker} from '@devexpress/dx-react-chart';
 
-import '@devexpress/dx-react-chart-bootstrap4/dist/dx-react-chart-bootstrap4.css';
 import './TickerChartComponent.css';
 import {IChartData} from "../../../interfaces";
 
